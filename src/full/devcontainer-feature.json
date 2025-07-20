@@ -6,8 +6,7 @@
   "dependsOn": {
     "ghcr.io/devcontainers/features/common-utils": {},
     "ghcr.io/devcontainers/features/git": {},
-    "ghcr.io/devcontainers/features/git-cli": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    "ghcr.io/devcontainers/features/github-cli": {}
   },
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils",
@@ -17,7 +16,7 @@
   "options": {
     "dotfilesRepository": {
       "type": "string",
-      "default": null,
+      "default": "",
       "description": "The Git repository URL containing your dotfiles. It should be public or use an auth token if private."
     },
     "dotfilesFolder": {

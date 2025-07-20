@@ -14,7 +14,7 @@
   "options": {
     "dotfilesRepository": {
       "type": "string",
-      "default": null,
+      "default": "",
       "description": "The Git repository URL containing your dotfiles. It should be public or use an auth token if private."
     },
     "dotfilesFolder": {
