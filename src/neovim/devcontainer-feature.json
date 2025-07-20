@@ -10,5 +10,22 @@
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils",
     "ghcr.io/devcontainers/features/git"
-  ]
+  ],
+  "options": {
+    "dotfilesRepository": {
+      "type": "string",
+      "default": null,
+      "description": "The Git repository URL containing your dotfiles. It should be public or use an auth token if private."
+    },
+    "dotfilesFolder": {
+      "type": "string",
+      "default": "nvim",
+      "description": "The subfolder inside your dotfiles repo (e.g. nvim/.config/nvim)."
+    },
+    "installDotfiles": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install dotfiles for zsh/nvim config."
+    }
+  },
 }
