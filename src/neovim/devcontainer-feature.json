@@ -1,0 +1,17 @@
+{
+  "id": "neovim",
+  "version": "1.0.0",
+  "name": "Neovim",
+  "description": "Build Neovim from source",
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/common-utils": {},
+    "ghcr.io/devcontainers/features/git": {}
+  },
+  "install": {
+    "script": "./install.sh"
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils",
+    "ghcr.io/devcontainers/features/git"
+  ]
+}
