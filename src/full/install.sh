@@ -1,8 +1,8 @@
 #!/bin/bash
 set -euxo pipefail
 
-HOME="/home/$USERNAME"
 USERNAME="${_REMOTE_USER:-vscode}"
+HOME="/home/$USERNAME"
 VERSION="stable"
 INSTALL_DOTFILES=${INSTALL_DOTFILES:-true}
 DOTFILES_REPOSITORY=${DOTFILES_REPOSITORY:-}
