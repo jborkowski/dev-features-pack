@@ -1,5 +1,5 @@
 {
-  "id": "neovim",
+  "id": "cli-oxided",
   "version": "1.0.0",
   "name": "Oxided CLI",
   "description": "Rust based CLI-tools replacements",
