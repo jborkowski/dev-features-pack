@@ -1,0 +1,12 @@
+{
+  "id": "neovim",
+  "version": "1.0.0",
+  "name": "Oxided CLI",
+  "description": "Rust based CLI-tools replacements",
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/common-utils": {}
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
+}
