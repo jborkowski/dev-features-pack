@@ -1,6 +1,6 @@
 {
   "id": "full",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "name": "full",
   "description": "All features at once",
   "dependsOn": {

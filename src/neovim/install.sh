@@ -4,9 +4,9 @@ set -euxo pipefail
 USERNAME="${_REMOTE_USER:-vscode}"
 HOME="/home/$USERNAME"
 VERSION="stable"
-INSTALL_DOTFILES=${INSTALL_DOTFILES:-true}
-DOTFILES_REPOSITORY=${DOTFILES_REPOSITORY:-}
-DOTFILES_FOLDER=${DOTFILES_FOLDER:-nvim}
+INSTALLDOTFILES=${INSTALLDOTFILES:false}
+DOTFILESREPOSITORY=${DOTFILESREPOSITORY:-}
+DOTFILESFOLDER=${DOTFILESFOLDER:-nvim}
 
 echo "Install deps for neovim"
 
@@ -26,13 +26,13 @@ rm -rf /tmp/neovim-${VERSION}
 
 pip3 install -U pynvim
 
-if [ "$INSTALL_DOTFILES" = "true" ]; then
+if [ "$INSTALLDOTFILES" = "true" ]; then
   TEMP_DIR="$(mktemp -d)"
-  git clone "$DOTFILES_REPOSITORY" "$TEMP_DIR"
+  git clone "$DOTFILESREPOSITORY" "$TEMP_DIR"
 
   mkdir -p "$HOME/.config"
 
-  cp -r "$TEMP_DIR/$DOTFILES_FOLDER" "$HOME/.config/nvim"
+  cp -r "$TEMP_DIR/$DOTFILESFOLDER" "$HOME/.config/nvim"
 
   rm -rf "$TEMP_DIR"
 

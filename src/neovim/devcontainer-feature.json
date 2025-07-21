@@ -1,6 +1,6 @@
 {
   "id": "neovim",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "Neovim",
   "description": "Build Neovim from source",
   "dependsOn": {
@@ -24,7 +24,7 @@
     },
     "installDotfiles": {
       "type": "boolean",
-      "default": true,
+      "default": false,
       "description": "Install dotfiles for zsh/nvim config."
     }
   },
