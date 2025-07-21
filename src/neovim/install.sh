@@ -11,7 +11,7 @@ DOTFILESFOLDER=${DOTFILESFOLDER:-nvim}
 echo "Install deps for neovim"
 
 apt-get update
-apt-get install -y build-essential cmake gettext unzip curl python3-pip ninja-build python3-pynvim
+apt-get install -y build-essential cmake gettext unzip curl python3-pip ninja-build python3-pynvim  lua5.4 luarocks
 apt-get -y clean && rm -rf /var/lib/apt/lists/*
 
 echo "Downloading source for ${VERSION}..."
@@ -36,4 +36,5 @@ if [ "$INSTALLDOTFILES" = "true" ]; then
   rm -rf "$TEMP_DIR"
 
   chown -R $USERNAME:$USERNAME "$HOME/.config/nvim"
+  chown -R $USERNAME:$USERNAME "$HOME/.local"
 fi
