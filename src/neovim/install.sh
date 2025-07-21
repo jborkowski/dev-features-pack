@@ -9,9 +9,10 @@ DOTFILES_REPOSITORY=${DOTFILES_REPOSITORY:-}
 DOTFILES_FOLDER=${DOTFILES_FOLDER:-nvim}
 
 echo "Install deps for neovim"
-apt-get update \ 
-  && apt-get install -y build-essential cmake gettext unzip curl python3-pip ninja-build \
-  && apt-get -y clean && rm -rf /var/lib/apt/lists/*
+
+apt-get update
+apt-get install -y build-essential cmake gettext unzip curl python3-pip ninja-build 
+apt-get -y clean && rm -rf /var/lib/apt/lists/*
 
 echo "Downloading source for ${VERSION}..."
 curl -sL https://github.com/neovim/neovim/archive/refs/tags/${VERSION}.tar.gz | tar -xzC /tmp 2>&1
