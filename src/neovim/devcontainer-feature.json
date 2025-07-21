@@ -1,6 +1,6 @@
 {
   "id": "neovim",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "Neovim",
   "description": "Build Neovim from source",
   "dependsOn": {

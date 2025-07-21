@@ -24,7 +24,9 @@ ln -sf /usr/local/nvim/bin/nvim /usr/local/bin/nvim
 
 rm -rf /tmp/neovim-${VERSION}
 
+cd $HOME
 pip3 install -U pynvim
+
 
 if [ "$INSTALLDOTFILES" = "true" ]; then
   TEMP_DIR="$(mktemp -d)"
