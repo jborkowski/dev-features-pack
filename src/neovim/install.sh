@@ -11,7 +11,7 @@ DOTFILESFOLDER=${DOTFILESFOLDER:-nvim}
 echo "Install deps for neovim"
 
 apt-get update
-apt-get install -y build-essential cmake gettext unzip curl python3-pip ninja-build 
+apt-get install -y build-essential cmake gettext unzip curl python3-pip ninja-build python3-pynvim
 apt-get -y clean && rm -rf /var/lib/apt/lists/*
 
 echo "Downloading source for ${VERSION}..."
