@@ -1,6 +1,6 @@
 {
   "id": "cli-oxided",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Oxided CLI",
   "description": "Rust based CLI-tools replacements",
   "dependsOn": {
