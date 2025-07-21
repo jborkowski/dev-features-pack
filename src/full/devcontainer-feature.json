@@ -8,16 +8,7 @@
     "ghcr.io/devcontainers/features/git": {},
     "ghcr.io/devcontainers/features/github-cli": {},
     "ghcr.io/jborkowski/dev-features-pack/cli-oxided": {},
-    "ghcr.io/jborkowski/dev-features-pack/neovim": {
-
-     "dotfilesRepository": ""
-    "dotfilesFolder": {
-    "installDotfiles": {
-      "type": "boolean",
-      "default": true,
-      "description": "Install dotfiles for zsh/nvim config."
-    }
-    }
+    "ghcr.io/jborkowski/dev-features-pack/neovim": {}
   },
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils",
