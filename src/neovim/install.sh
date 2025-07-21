@@ -24,7 +24,6 @@ ln -sf /usr/local/nvim/bin/nvim /usr/local/bin/nvim
 
 rm -rf /tmp/neovim-${VERSION}
 
-
 if [ "$INSTALLDOTFILES" = "true" ]; then
   TEMP_DIR="$(mktemp -d)"
   git clone "$DOTFILESREPOSITORY" "$TEMP_DIR"
