@@ -7,5 +7,6 @@ DOTFILES_REPOSITORY=${DOTFILES_REPOSITORY:-}
 DOTFILES_FOLDER=${DOTFILES_FOLDER:-nvim}
 
 export VERSION INSTALL_DOTFILES DOTFILES_REPOSITORY DOTFILES_FOLDER
-../neovim/install.sh
-../cli-oxided/install.sh
+# ../neovim/install.sh
+# ../cli-oxided/install.sh
+# 

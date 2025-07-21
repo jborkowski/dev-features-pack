@@ -1,6 +1,6 @@
 {
   "id": "full",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "full",
   "description": "All features at once",
   "dependsOn": {
@@ -11,7 +11,9 @@
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils",
     "ghcr.io/devcontainers/features/git",
-    "ghcr.io/devcontainers/features/github-cli:1"
+    "ghcr.io/devcontainers/features/github-cli:1",
+    "ghcr.io/jborkowski/dev-features-pack/cli-oxide:1",
+    "ghcr.io/jborkowski/dev-features-pack/neovim:1"
   ],
   "options": {
     "dotfilesRepository": {
