@@ -12,7 +12,7 @@
     "ghcr.io/devcontainers/features/common-utils",
     "ghcr.io/devcontainers/features/git",
     "ghcr.io/devcontainers/features/github-cli:1",
-    "ghcr.io/jborkowski/dev-features-pack/cli-oxide:1",
+    "ghcr.io/jborkowski/dev-features-pack/cli-oxided:1",
     "ghcr.io/jborkowski/dev-features-pack/neovim:1"
   ],
   "options": {
