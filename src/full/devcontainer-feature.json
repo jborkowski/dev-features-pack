@@ -1,12 +1,14 @@
 {
   "id": "full",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "full",
   "description": "All features at once",
   "dependsOn": {
     "ghcr.io/devcontainers/features/common-utils": {},
     "ghcr.io/devcontainers/features/git": {},
     "ghcr.io/devcontainers/features/github-cli": {}
+    "ghcr.io/jborkowski/dev-features-pack/cli-oxided": {},
+    "ghcr.io/jborkowski/dev-features-pack/neovim": {}
   },
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils",
